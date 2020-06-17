@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>kebuke可不可紅茶</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 60, 80);
+            font-family: 微軟正黑體;
+        }
+        /*照片部分*/
+        #photo {
+            width: 100;
+            height: 100;
+            line-height: 150px;
+            max-width: 100%;
+            display: block;
+            text-align: center;
+        }
+        /*可不可內文 開始*/
+        #kbkvis{
+            background-color: rgb(255, 206, 143);
+            margin: 10px 0px 6px;
+        }
+        .bo3{
+            justify-content: center;
+        }
+        #kebuke2{
+            width: 100%;
+        }
+        /*手搖圖 開始*/
+        .bt3 {
+            display: block;
+            text-align: center;
+        }
+        .cup-wrapper{
+            margin-top:-190px;
+            display: flex;
+
+        }
+        @media screen and (max-width:1000px){
+            .cup-wrapper{
+                width:90%;
+            }
+        }
+        @media screen and (max-width:580px){
+            .cup-wrapper{
+                width:50%;
+                margin-top: 0px;
+            }
+        }
+        /*手搖圖 結束*/
+        /*可不可內文 結束*/
+        @media screen and (max-width: 754px){
+            .s12{
+                width:40%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="topnav" id="myTopnav">
+                <a class="navber-brand" href="#" id="logono1">
+                    <img class="active" src="img/logo-head1.png" style="width:250px;" />
+                </a>
+                <a style="color: rgb(255, 206, 143)" href="#"></a>
+                <a style="color: rgb(255, 206, 143)" href="#">聯絡</a>
+                <a style="color: rgb(255, 206, 143)" href="#">加盟</a>
+                <a style="color: rgb(255, 206, 143)" href="#">消息</a>
+                <a style="color: rgb(255, 206, 143)" href="#tea">茶</a>
+                <a style="color: rgb(255, 206, 143)" href="#about">可不可</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="color: rgb(255, 206, 143)">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner-01.jpg" alt="" class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner-2.jpg" alt="" class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/kebuke-3.jpg" alt="" class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner-4.jpg" alt="" class="d-block img-fluid">
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <section id="about" class="index_section about">
+            <div class="bo2">
+                <h2 class="section-title wow fadeIn">
+                    <img class="bt1" src="./img/title-kbk1.png" alt="" style="margin:auto">
+                </h2>
+                <div id="kbkvis"></div>
+            </div>
+            <div class="about-img wow fadeIn" style="background-image:url('./images/2.jpg')">
+                <img src="./img/2.jpg" class="img-fluid" alt="" id="kebuke2">
+            </div>
+            <div class="bo3">
+                <div class="description">
+                    <div class="row mw-100">
+                        <!-- 最大寬度100 -->
+                        <div class="col-md-8 col-sm-8 wow fadeIn" style="color:rgb(253, 221, 179);">
+                            <p>創立於2008年初夏，台中市向上市場旁，用了8年時間，近3000個日子，堅持做對的事，我們相信任何事物，歸根究底回到最初的本質，都會呈現一種單純美好的狀態-和人一樣。</p>
+                            <br>
+                            <p>現在就讓紅茶帶你進入時光旅行、憶起青澀的青春，回到舊時代的美好。</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="bt3">
+                                <img class="cup-wrapper img-fluid mw-100" src="./img/cup.png"  alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tea" class="index_section tea">
+            <div class="container-small">
+                <h2><img class="bt1" src="./img/title-tea1.png" alt="" style="margin:auto"></h2>
+                <div class="description">
+                    <div class="row mw-100">
+                        <!-- 最大寬度100 -->
+                        <div class="col-md-5 pic-info wow fadeInLeft">
+                            <img class="s12 img-fluid" src="./img/s1.png"  id="photo">
+                        </div>
+                        <div class="col-md-7 text-info" style="line-height: 2.5em; font-size: 20px;">
+                            <h3 class="title wow fadeIn" style="color:Orange;">您不知道的熟成紅茶</h3>
+                            <div class="feature">
+                                <div class="item wow fadeIn">
+                                    <h4 class="item-title" style="color:Orange;">什麼熟成紅茶</h4>
+                                    <div class="item-into" style="color: rgb(253, 221, 179);">
+                                        <p>選用茶葉芽尖往下數的第三片嫩葉，再經由適當的溫濕度儲存一年，使其紅茶氧化進入後熟階段，其香氣及甜度會加深濃郁，而產生獨特的花香及果香。</p>
+                                    </div>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <h4 class="item-title" style="color:Orange;">為何要用熟成紅茶</h4>
+                                    <div class="item-into" style="color: rgb(253, 221, 179);">
+                                        <p>當口中帶有油脂的蛋白質食物，遇上熟成紅茶中的單寧酸，使其蛋白質軟化中和了彼此，保留熟成紅茶的風味並提升了食物的滋味，造就完美平衡。</p>
+                                    </div>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <h4 class="item-title" style="color:Orange;">熟成紅茶的特色</h4>
+                                    <div class="item-info" style="color: rgb(253, 221, 179);">
+                                        <p>熟成是蛋白質的連續性發酵過程，如同水果及咖啡豆經熟成後，甜度更甜、風味更明顯，最適合不喜愛苦澀味的人飲用，可以品味與新茶相反並經過時間沉澱的紅茶魅力。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bob-container">
+                <div class="bob-row">
+                    <div class="bob-3item">
+                        <img src="./img/tea-1.png" alt="熟成紅茶">
+                        <span style="color:Orange;">熟成紅茶</span>
+                        <div style="height:43px;color: rgb(253, 221, 179);">解炸物/燒烤肉類油膩<br>茶味濃郁帶果香</div>
+                    </div>
+                    <div class="bob-3item">
+                        <img src="./img/tea-2.png" alt="麗春紅茶">
+                        <span style="color:Orange;">麗春紅茶</span>
+                        <div style="height:43px;color: rgb(253, 221, 179);">去除海鮮羶腥<br> 茶味較淡帶花香</div>
+                    </div>
+                    <div class="bob-3item">
+                        <img src="./img/tea-3.png" alt="太妃紅茶">
+                        <span style="color:Orange;">太妃紅茶</span>
+                        <div style="height:43px;color: rgb(253, 221, 179);">咖啡與茶的神祕搭配</div>
+                    </div>
+                    <div class="bob-3item">
+                        <img src="./img/tea-4.png" alt="熟成冷露">
+                        <span style="color:Orange;">熟成冷露</span>
+                        <div style="height:43px;color: rgb(253, 221, 179);">手工冬瓜與茶<br>更神秘比例搭配</div>
+                    </div>
+                    <div class="bob-3item">
+                        <img src="./img/tea-5.png" alt="太妃紅茶">
+                        <span style="color:Orange;">雪花冷露</span>
+                        <div style="height:43px;color: rgb(253, 221, 179);">手工冬瓜獨奏</div>
+                    </div>
+                    <div class="bob-3item">
+                        <img src="./img/tea-6.png" alt="太妃紅茶">
+                        <span style="color:Orange;">春芽冷露</span>
+                        <div style="height:43px;color: rgb(253, 221, 179);">手工冬瓜綠茶</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="kbk-logo">
+            <img src="./img/foot.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="foot">
+
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
