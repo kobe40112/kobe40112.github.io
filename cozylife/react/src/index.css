@@ -1,0 +1,209 @@
+@charset "UTF-8";
+html {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  height: 5000px;
+}
+
+.productBody {
+  margin: 0 auto;
+  width: 100%;
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  height: 1200px;
+}
+
+.sidebar {
+  margin-top: 95px;
+  padding: 0;
+  font-family: 'Lexend Giga', sans-serif;
+}
+
+.sidebar > .checklist > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar > .checklist > ul > li {
+  margin: 15px;
+  font-family: 微軟正黑體, Arial, Helvetica;
+}
+
+.sidebar > .checklist > ul > li > a {
+  color: #3c3c3c;
+}
+
+.sidebar > .checklist > ul > li > a:hover {
+  color: #dbcab6;
+  text-decoration: none;
+}
+
+main {
+  width: 80%;
+  height: 1200px;
+}
+
+.productContent {
+  width: 100%;
+  height: 340px;
+}
+
+.productContent > ul {
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.productContent > ul > li {
+  text-align: center;
+  font-family: 微軟正黑體;
+  list-style-type: none;
+  width: 30%;
+}
+
+.productContent > ul > li > h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.producth1 {
+  font-family: 微軟正黑體;
+  margin: 30px 0px 0px 38px;
+}
+
+.producth1 > h3 {
+  margin: 0px 0px 28px 10px;
+  float: left;
+}
+
+.producth1 > .Forme {
+  float: right;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 0px 60px 0px 0px;
+  height: 25px;
+}
+
+.productNav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0px 50px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  height: 3000px;
+}
+
+.BrandBody {
+  margin: 0 auto;
+  width: 100%;
+  height: 1200px;
+}
+
+.Brandphoto {
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.Brandphoto > .Brandtext {
+  position: absolute;
+  float: center;
+  text-align: center;
+  margin: 0 auto;
+  top: 40%;
+  left: 40%;
+  color: #fff;
+  font-weight: bold;
+}
+
+.BrandContent {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.BrandContent > .BrandCon1 {
+  margin: 0 auto;
+  width: 70%;
+  height: 500px;
+}
+
+.BrandContent > .BrandCon1 > .BrandCon2 {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.BrandContent > .BrandCon1 > .BrandCon2 .conh4 {
+  margin: 20px 0px 10px 0px;
+  font-family: 微軟正黑體;
+  text-align: center;
+}
+
+.BrandSix {
+  margin: 0 auto;
+  font-family: 微軟正黑體;
+  text-align: center;
+}
+
+.Brandman {
+  height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Brandman > ul {
+  padding: 0px 15px 0px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Brandman > ul > li {
+  text-align: center;
+  font-family: 微軟正黑體;
+  list-style-type: none;
+  padding: 50px;
+  width: 25%;
+}
+
+.BrandFour > div {
+  text-align: center;
+  min-height: 70%;
+}
+
+body {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=index.css.map */

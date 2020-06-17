@@ -1,0 +1,122 @@
+// @import '/variables2.scss';
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Member list
+// #loadmember {
+//   margin-top: 100px;
+// }
+
+// ul {
+//   margin-top: 70px;
+//   font-family: sans-serif;
+//   li {
+//     list-style-type: square;
+//   }
+
+//   #list1 {
+//     list-style-type: none;
+//     display: inline;
+//   }
+// }
+
+#memberWord {
+  margin-top: 15vmin;
+  margin-bottom: 150px;
+}
+
+// 外框
+.bordertop {
+  border-width: 0 1px 1px 0.1px;
+  border-bottom: rgba(97, 62, 34, 0.1) solid;
+  border-left: rgba(97, 62, 34, 0.1) solid;
+  border-right: rgba(97, 62, 34, 0.1) solid;
+}
+
+// File Page
+#filetabs {
+  margin-top: 70px;
+}
+
+#filetop {
+  margin: 15vmin 10vmin 15vmin 0;
+}
+
+#loadfile {
+  margin: 100px;
+}
+
+.form-row {
+  margin: 20px;
+}
+
+#topbottom {
+  margin-top: 1vmin;
+}
+
+.radiotop {
+  margin: 1vmin 0 0 1.5vmin;
+}
+
+// Discount Pages
+#discounttabs {
+  margin-top: 70px;
+}
+
+#loaddiscount {
+  margin: 150px;
+}
+
+#disDet:hover {
+  background-color: #c73636;
+  border-color: #c73636;
+}
+
+#useDis:hover {
+  color: #00888d;
+  background-color: #fde1c6;
+  border-color: #00888d;
+}
+
+// Collection Pages
+#collectiontabs {
+  margin-top: 70px;
+}
+
+.col-mb-auto {
+  margin: 0 20px 40px 20px;
+}
+
+#loadcollection {
+  margin: 150px;
+}
+
+#colDet:hover {
+  background-color: #c73636;
+  border-color: #c73636;
+}
+
+#goShop:hover {
+  color: #00888d;
+  background-color: #fde1c6;
+  border-color: #00888d;
+  // color:#00ff40;
+}
+// Inquire Pages
+#pm {
+  margin: 0 auto 0 auto;
+  // border: 0 1px 0 1px #000 solid;
+}
+
+#loadinquire {
+  margin-top: 150px 0 250px 0;
+}
+
+// Banner for NotFoundPage
+#bannerpage {
+  margin-top: 70px;
+}
+
+#requiretop {
+  padding: 5vmin 1vmin 1vmin 1vmin;
+}

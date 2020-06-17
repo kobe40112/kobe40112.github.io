@@ -1,0 +1,85 @@
+@function pxToVw($px) {
+    @return $px * 100 /1366+vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bannerAboutTop {
+    position: relative;
+
+}
+
+
+.bannerAbout {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerAbout video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width:375px) {
+        >.sourcepro {
+            height: 200px;
+            // padding-bottom: 56.25%;
+
+        }
+
+    }
+}
+
+.bannerAbout i.fa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 35vw;
+    text-align: center;
+    color: #000;
+    line-height: 100vh;
+    mix-blend-mode: screen;
+}
+
+.bannerAbout i.fa:hover {
+    color: #fff;
+    background: #000;
+}
+
+@media (max-width:768px) {
+    .bannerAbout {
+        flex-direction: column;
+    }
+
+    .bannerAbout i.fa {
+        height: 50%;
+        line-height: 50vh;
+        font-size: 50vw;
+    }
+
+}
+
+@media (max-width:375px) {
+    .bannerAbout {
+        flex-direction: column;
+    }
+
+    .bannerAbout i.fa {
+        height: 50%;
+        line-height: 50vh;
+        font-size: 50vw;
+    }
+
+}

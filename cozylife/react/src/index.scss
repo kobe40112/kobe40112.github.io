@@ -1,0 +1,23 @@
+@import './styles/ruiyi.scss'; //芮以
+@import './styles/cart.scss'; //政德
+@import './styles/ProductDisplay.scss'; //政德
+@import './styles/Loadingpage.scss'; //政德
+@import './styles/product.scss'; //天鴻
+@import './styles/discountMain.scss'; //旻旻
+@import './styles/ProductDetail.css'; //右昕
+@import './styles/custom.scss'; //宗訓
+body {
+  padding-top: 80px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  //   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //     sans-serif;
+  //   -webkit-font-smoothing: antialiased;
+  //   -moz-osx-font-smoothing: grayscale;
+}
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }

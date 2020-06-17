@@ -1,0 +1,156 @@
+* {
+  // margin: 0;
+  // padding: 0;
+  // font-family: consolas;
+}
+.loadingPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+
+  > .Mask {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    z-index: 100;
+    /* opacity: 0%; */
+    opacity: 60%;
+
+    /* animation: animateMask 5s ease-in-out; */
+  }
+  > .bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Ader3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    animation: animateImg 5s ease-in-out;
+    /* filter: blur(5px); */
+  }
+  > .wavy {
+    position: relative;
+    /* 鏡像 */
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    animation: animateDisappear 5s ease-in-out;
+    opacity: 0%;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    z-index: 1000;
+    
+    > span {
+      position: relative;
+      display: inline-block;
+      color: #d9c8b4;
+      font-size: 3em;
+      /* 控制大小寫 */
+      text-transform: uppercase;
+      animation: animateY 1s ease-in-out infinite;
+      animation-delay: calc(0.1s * var(--i));
+    }
+  }
+
+  // > .cozyLifeLogo {
+  //   font-size: 50px;
+  //   position: absolute;
+  //   top: 40%;
+  //   left: 44%;
+  //   z-index: 200;
+  // }
+
+  > .startH1 {
+    width: 180px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid bisque;
+    /* background-color: bisque; */
+    color: bisque;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 10000;
+    opacity: 0%;
+    animation: animateH1 2s;
+    animation-delay: 3s;
+    /* 讓動畫停留在結束狀態 */
+    animation-fill-mode: forwards;
+    transition: all 0.5s ease;
+  }
+  }
+  .startH1:hover{
+    width: 240px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 32px;
+    color: #fff;
+    border: 2px solid #fff;
+    line-height: 72px;
+    transform: translateX(-32px);
+  }
+
+@keyframes animateY {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateDisappear {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes animateMask {
+  0% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animateH1 {
+  0% {
+    opacity: 0%;
+    left: 70%;
+  }
+  100% {
+    opacity: 100%;
+    left: 43%;
+
+  }
+}
+
+@keyframes animateImg {
+  0% {
+    /* 模糊 */
+    filter: blur(25px);
+    height: 30vh;
+    top: 38%;
+  }
+  100% {
+    filter: blur(0px);
+    height: 100vh;
+  }
+}

@@ -1,0 +1,160 @@
+.plcontainer {
+  margin-top: 50px;
+}
+.loadspinner {
+  /* margin-left: 50%; */
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.nav-icon1 {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+.nav-icon2 {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+.nav-icon1:hover {
+  color: lightslategray;
+}
+
+.nav-icon2:hover {
+  color: rgb(182, 129, 129);
+}
+
+.breadcrumb {
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .galleryphoto {
+    min-width: 100%;
+  }
+
+  .detail {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+
+.hearticon:link {
+  color: brown;
+}
+
+.countertotal {
+  margin: auto 0.5em;
+}
+
+#reviewtitle {
+  margin: 0.5em;
+  color: #ccc;
+  text-align: center;
+}
+
+.reviewcard {
+  margin: 0.5em;
+}
+
+/* .bs-example {
+  margin: 20px;
+} */
+
+.relatedtitle {
+  margin: 10px auto;
+  font-weight: bold;
+  color: rgb(75, 70, 70);
+  text-align: center;
+}
+
+.relatedcard {
+  /* float: left; */
+  width: 24%;
+  margin-left: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.relatedcard :hover {
+  transform: scale(0.99);
+}
+
+@media (max-width: 800px) {
+  .relatedcard {
+    left: 24%;
+    width: 50%;
+    margin: 10px;
+  }
+}
+
+.plSection {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.gallery {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#image-container {
+  transition: all 1.5s ease;
+}
+
+#image-container:hover {
+  transform: scale(1.1);
+}
+
+.thumb img {
+  width: 100px;
+  margin: 0.2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+.counter {
+  display: inline-flex;
+}
+
+.addbtn {
+  display: block;
+}
+
+.detail-content {
+  text-align: center;
+}
+
+.otherproduct {
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+.review-stars {
+  float: right;
+}
+
+.minusatc {
+  width: 30px;
+}
+
+.addatc {
+  width: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .otherproduct {
+    display: block;
+  }
+}
+
+#writereview {
+  margin-left: 10px;
+}

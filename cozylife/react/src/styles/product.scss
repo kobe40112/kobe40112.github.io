@@ -1,0 +1,587 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+@function pxToVw($px) {
+  @return $px * 100 /1366 + vw;
+}
+
+$mq1820: 1820px;
+$mq1517: 1517px;
+$mq1344: 1344px;
+$mq768: 768px;
+$mq778: 778px;
+$mq588: 588px;
+$mq375: 375px;
+
+//以下為 product頁 Styles
+html {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  height: auto;
+}
+
+.productBody {
+  margin: 0 auto;
+  width: 100%;
+  height: 1450px;
+  display: flex;
+
+  @media screen and (max-width: $mq768) {
+    height: 1200px;
+  }
+
+  @media screen and (max-width: $mq375) {
+    height: 4650px;
+  }
+}
+
+#acbar55 {
+  display: none;
+
+  @media screen and (max-width: $mq375) {
+    display: contents;
+    width: 45%;
+    float: left;
+  }
+}
+
+//左半部
+#asidepro {
+  width: 20%;
+  height: 1450px;
+
+  // background-color: #ffa;
+  @media screen and (max-width: $mq768) {
+    height: 1000px;
+  }
+
+  @media screen and (max-width: $mq375) {
+    display: none;
+    width: 45%;
+    float: left;
+  }
+}
+
+.sidebar {
+  margin-top: 95px;
+  padding: 0;
+  font-family: 'Lexend Giga', sans-serif;
+
+  @media screen and (max-width: $mq375) {
+    margin-top: 50px;
+  }
+
+  > .checklist {
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      > li {
+        margin: 15px;
+        font-family: 微軟正黑體, Arial, Helvetica;
+
+        @media screen and (max-width: $mq375) {
+          border-bottom: solid 0.5px;
+        }
+
+        > a {
+          color: rgb(60, 60, 60);
+        }
+
+        > a:hover {
+          color: #dbcab6;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+//右半邊
+#mainpro {
+  width: 80%;
+  height: 1380px;
+
+  //background-color: #aff;
+  @media screen and (max-width: $mq768) {
+    height: 500px;
+  }
+
+  @media screen and (max-width: $mq375) {
+    height: 3700px;
+  }
+
+  > .productContent {
+    //background-color: blue;
+    width: 100%;
+    height: 1270px;
+
+    @media screen and (max-width: $mq768) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: $mq375) {
+      width: 100%;
+      height: 3700px;
+    }
+  }
+}
+
+.Card1 {
+  margin-left: 25px;
+}
+
+.CardDeck12 {
+  // margin-left: 25px;
+  margin: 0 0 25px 25px;
+  padding: 10px;
+  float: left;
+  width: 33%;
+  height: 400px;
+
+  @media screen and (max-width: $mq768) {
+    height: 315px;
+  }
+
+  @media screen and (max-width: $mq375) {
+    margin: 25px 0 50px 0;
+    height: 350px;
+    width: 60%;
+  }
+}
+
+//下拉選單
+.producth1 {
+  font-family: 微軟正黑體;
+  margin: 30px 0px 0px 38px;
+  height: 60px;
+  padding-right: 80px;
+
+  @media screen and (max-width: $mq375) {
+    margin: 30px 0px 0px 20px;
+  }
+
+  > h3 {
+    float: left;
+    width: 30%;
+
+    @media screen and (max-width: $mq375) {
+      float: none;
+      width: 100%;
+      margin: 30px 0px 10px 10px;
+    }
+  }
+
+  > .Forme {
+    float: right;
+    //align-items: stretch;
+    margin: 0px 25px 0px 0px;
+    height: 28px;
+
+    @media screen and (max-width: $mq768) {
+      margin: 0px 20px 0px 0px;
+      height: 35px;
+    }
+
+    @media screen and (max-width: $mq375) {
+      float: left;
+      width: 100%;
+      padding: 0 0 0 0;
+      margin: 30px 80px 0px 10px;
+    }
+  }
+}
+
+//分頁
+.pagination {
+  justify-content: flex-end;
+
+  padding: 0px 55px 0px 0px;
+  display: flex;
+
+  @media screen and (max-width: $mq768) {
+    padding: 0px 10px 0px 0px;
+  }
+
+  @media screen and (max-width: $mq375) {
+    width: 100%;
+    margin: 30px 0 30px 0;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+//以下為 Brand頁 Styles
+
+.BrandBody {
+  margin: 0 auto;
+  width: 100%;
+  height: 1200px;
+}
+
+.Brandphoto {
+  margin: 0 auto;
+  font-size: pxToVw(50);
+  text-align: center;
+  background-attachment: fixed;
+  //display: flex;
+  position: relative;
+
+  > img {
+    width: 100%;
+    height: 720px;
+
+    // height: pxToVw(660);
+    @media screen and (max-width: $mq1344) {
+      height: 835px;
+    }
+
+    @media screen and (max-width: $mq375) {
+      height: 300px;
+    }
+  }
+
+  > .Brandtext {
+    font-family: 微軟正黑體;
+    position: absolute;
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 40%;
+    left: 45%;
+    color: #fff;
+    font-weight: bold;
+
+    @media screen and (max-width: $mq375) {
+      top: 40%;
+      left: 38%;
+      font-size: 23px;
+    }
+  }
+}
+
+.BrandContent {
+  margin: 0 auto;
+  width: 100%;
+
+  > .BrandCon1 {
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+
+    @media screen and (max-width: $mq588) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: $mq375) {
+      width: 85%;
+    }
+
+    > .BrandCon2 {
+      font-family: 微軟正黑體;
+      margin: 0 auto;
+      width: 60%;
+      text-align: center;
+
+      @media screen and (max-width: $mq778) {
+        width: 80%;
+      }
+
+      @media screen and (max-width: $mq588) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: $mq375) {
+        width: 100%;
+      }
+
+      .conh4 {
+        margin: 20px 0px 10px 0px;
+        text-align: center;
+
+        @media screen and (max-width: $mq375) {
+          margin: 10px 0px 10px 0px;
+        }
+      }
+    }
+  }
+}
+
+.BrandSix {
+  margin: 0 auto;
+  font-family: 微軟正黑體;
+  text-align: center;
+
+  > .Sixh2 {
+    margin: 0px 0px 20px 0px;
+  }
+
+  > .Brandteam {
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: $mq375) {
+      display: inline;
+    }
+
+    > div {
+      @media screen and (max-width: $mq375) {
+        margin: 60px;
+      }
+    }
+
+    > img {
+      width: pxToVw(220);
+      height: pxToVw(220);
+    }
+  }
+}
+
+.BrandFour {
+  font-family: 微軟正黑體;
+  width: 100%;
+  text-align: center;
+
+  @media screen and (max-width: $mq1820) {
+    padding: 0px 300px;
+  }
+
+  @media screen and (max-width: $mq1517) {
+    padding: 0px 160px;
+  }
+
+  @media screen and (max-width: $mq1344) {
+    padding: 0px 80px;
+  }
+
+  @media screen and (max-width: $mq375) {
+    padding: 0px 25px;
+  }
+
+  .Brandh2 {
+    @media screen and (max-width: $mq375) {
+      margin-top: 20px;
+    }
+  }
+}
+
+//----------------以下為footer----------------
+#contact {
+  color: #fff;
+  background-attachment: fixed;
+  background-color: #222;
+  background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+  background-size: cover;
+  background-position: bottom;
+  font-family: Microsoft JhengHei UI, Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.f-address {
+  > li {
+    list-style: none;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    font-family: Microsoft JhengHei UI;
+  }
+}
+
+.social-pet li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-pet li a {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  line-height: 35px;
+  background-color: #3a5a95;
+  color: #fff;
+}
+
+.social-pet li:nth-child(2) a {
+  background-color: #57aced;
+}
+
+.social-pet li:nth-child(3) a {
+  background-color: #dd4f43;
+}
+
+.social-pet li:nth-child(4) a {
+  background-color: #6b27b2;
+}
+
+.social-pet li a:hover {
+  background-color: #0141a2;
+}
+
+.social-pet li a:hover i {
+  transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.recent-post li {
+  display: block;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.recent-post li label {
+  float: left;
+  border: 2px solid #ccc;
+  padding: 1px 7px;
+  text-align: center;
+}
+
+.recent-post li label span {
+  color: #fff;
+}
+
+footer .input-group-addon {
+  background-color: #0141a2;
+  padding: 8px;
+}
+
+//以下為RWD
+
+//以下為 product頁 Styles RWD
+
+//以下為 Brand頁 Styles RWD
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+//----------------特效----------------
+
+.bannerAboutTop {
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .bannerAbout {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .bannerAbout video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .bannerAbout i.fa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 35vw;
+    text-align: center;
+    color: #000;
+    line-height: 100vh;
+    mix-blend-mode: screen;
+    display: none;
+  }
+
+  .bannerAbout i.fa:hover {
+    color: #fff;
+    background: #000;
+  }
+
+  @media (max-width: 768px) {
+    .bannerAbout {
+      flex-direction: column;
+    }
+
+    .bannerAbout i.fa {
+      height: 50%;
+      line-height: 50vh;
+      font-size: 50vw;
+    }
+  }
+}
+
+.bannerAbout {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerAbout video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerAbout i.fa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 35vw;
+  text-align: center;
+  color: #000;
+  line-height: 100vh;
+  mix-blend-mode: screen;
+}
+
+.bannerAbout i.fa:hover {
+  color: #fff;
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .bannerAbout {
+    flex-direction: column;
+  }
+
+  .bannerAbout i.fa {
+    height: 50%;
+    line-height: 50vh;
+    font-size: 50vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .bannerAbout {
+    flex-direction: column;
+  }
+
+  .bannerAbout i.fa {
+    height: 50%;
+    line-height: 50vh;
+    font-size: 50vw;
+  }
+}
