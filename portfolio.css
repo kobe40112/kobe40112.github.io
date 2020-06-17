@@ -1,0 +1,196 @@
+@charset "UTF-8";
+html {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  height: auto;
+}
+
+.portbody {
+  width: 100%;
+  font-family: "微軟正黑體";
+}
+
+.myabout {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.myabout > .aboutphoho {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.myabout > .aboutphoho > .aboutli {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.myabout > .aboutText {
+  margin: 0 auto;
+  width: 67%;
+  margin-top: 20px;
+}
+
+.myabout > .aboutText > .abouth2 {
+  text-align: center;
+}
+
+.myWebDesign {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.myWebDesign > .WebDesignh2 {
+  margin: 20px 0 50px 0;
+  text-align: center;
+}
+
+.myWebDesign > .WebDesignh3 {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.myWebDesign > .WebDesignphoto1 {
+  margin: 0 auto;
+  width: 67%;
+  text-align: center;
+}
+
+.myWebDesign > .WebDesignphoto1 > .img-circle {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 30px 0;
+}
+
+.myWebDesign > .WebDesignphoto2 {
+  margin: 0 auto;
+  width: 68%;
+  text-align: center;
+}
+
+.myWebDesign > .WebDesignphoto2 > .img-rwd {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1453px) {
+  .myWebDesign > .WebDesignphoto2 > .img-rwd {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .myWebDesign > .WebDesignphoto2 > .img-rwd {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .myWebDesign > .WebDesignphoto2 > .img-rwd {
+    padding: 0px;
+    margin: 0 0 20px 0;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1453px) {
+  #imgkerwd {
+    width: 29%;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #imgkerwd {
+    width: 70%;
+  }
+}
+
+.myAnimation {
+  width: 67%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.myAnimation > .Animationh2 {
+  text-align: center;
+}
+
+.myAnimation > .Animationphoto1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.myAnimation > .Animationphoto1 > .AphotoImg {
+  margin: 10px 0 10px 0;
+  width: 50%;
+  height: 60%;
+}
+
+@media screen and (max-width: 460px) {
+  .myAnimation > .Animationphoto1 > .AphotoImg {
+    width: 100%;
+  }
+}
+
+.myMovie {
+  width: 67%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.myMovie > .Movieh2 {
+  text-align: center;
+}
+
+.myMovie > .MovieA > .MovieImg {
+  width: 100%;
+  height: 50%;
+}
+
+.myEffects {
+  width: 67%;
+  height: 50%;
+  margin: 5px auto;
+}
+
+.myEffects > .Effectsh2 {
+  text-align: center;
+}
+
+.myphotography {
+  width: 67%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.myphotography > .photographyh2 {
+  text-align: center;
+}
+
+.myphotography > .graphy {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.footer1 {
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+.footer1 > .footerdiv > .footerP {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+/*# sourceMappingURL=portfolio.css.map */

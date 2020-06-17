@@ -1,0 +1,186 @@
+        /*漢堡開始*/
+        .topnav {
+          background-color: rgb(0, 60, 80);
+          color: rgb(255, 206, 143);
+          font-family: 微軟正黑體;
+
+          justify-content: space-between;
+          overflow: hidden;
+
+      }
+
+      .topnav>a {
+          list-style-type: none;
+          display: flex;
+          margin: 50px 0;
+      }
+      #logono1 {
+          float: left;
+      }
+      .topnav a {
+          float: right;
+          display: block;
+          font-size: 25px;
+          font-weight: 100;
+          padding: 14px 16px;
+          text-align: center;
+          text-decoration: none;
+          letter-spacing: 0.2em;
+      }
+
+      .topnav a:hover {
+          font-weight: bolder;
+          color: rgb(255, 206, 143);
+      }
+
+      .topnav .icon {
+          font-weight: bolder;
+          display: none;
+      }
+
+      @media screen and (max-width: 900px) {
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+              float: right;
+              display: block;
+          }
+      }
+
+      @media screen and (max-width: 900px) {
+          .topnav.responsive {position: relative;}
+          .topnav.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+          }
+        
+          .topnav.responsive a {
+              float: none;
+              display: block;
+              text-align: right;
+          }
+      }
+      /*漢堡結束*/
+/*茶內文開始*/
+.bo2 {
+    margin: 50px 0;
+    text-align: center;
+    /*文字對齊*/
+}
+
+.row {
+    width: 1423px;
+    font-size: 23px;
+    padding: 50px;
+}
+
+.bt1 {
+    line-height: 150px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*茶內文結束*/
+/*6tea 開始*/
+.bob-container{
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+  }
+  
+  .bob-row{
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .bob-row:before,.bob-row:after{
+    display: table;
+    content: " ";  
+  }
+  
+  .bob-row:after{
+    clear: both;
+  }
+  
+  /*2個並排 不管在任何尺寸都會2個並排*/
+  .bob-2item{
+    width:50%;
+  }
+  
+  /*3個並排 在767px以下會垂直排列*/
+  .bob-3item{
+    width: 100%;
+  }
+  /*4個並排 在767px以下會2個排列*/
+  .bob-4item{
+    width:50%;
+  }
+  
+  .bob-2item,.bob-3item,.bob-4item{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+  }
+  
+  .bob-2item img,.bob-3item img,.bob-4item img{
+    width:100%;
+    display: block;
+  }
+  @media (min-width: 300px) {
+    .bob-container {
+      width: 320px;
+    }
+    .bob-3item{
+      width:50%;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.6em;
+    }
+  }
+  @media (min-width: 550px) {
+    .bob-container {
+      width: 550px;
+    }
+    .bob-3item{
+      width:50%;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  @media (min-width: 768px) {
+    .bob-container {
+      width: 750px;
+    }
+    .bob-3item{
+      width: 33.33333333%;
+      text-align: center;
+      line-height: 1.6em;
+    }
+    .bob-4item{
+      width:25%;
+    }
+  }
+  @media (min-width: 992px) {
+    .bob-container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bob-container {
+      width: 1170px;
+    }
+  }
+  /*6tea 結束*/
+  /*頁尾部分開始*/
+  .kbk-logo{
+    margin: 50px 0;
+}
+/*頁尾部分結束*/
+main {
+  justify-content: center;
+}
